@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
+
+h2 {
+    @include fontSize(36px);
+}
+li {
+    @include fontSize(18px);
+    text-decoration: underline;
+    font-weight: 500;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    &:active {
+        color: $nav-highlight;
+        background-color: $secondary;
+    }
+}
+
+input {
+    @include fontSize(16px);
+    color: $grey;
+}
